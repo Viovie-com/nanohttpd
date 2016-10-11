@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
+sourceCompatibility = 1.7
+
 version = '2.1.0'
 
 compileJava {
