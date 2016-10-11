@@ -144,6 +144,9 @@ public class HTTPSession implements IHTTPSession {
                 throw new ResponseException(Status.BAD_REQUEST, "BAD REQUEST: Syntax error. Usage: GET /example/file.html");
             }
 
+            // Sometime happen, the string has 65533 char
+            String method = st.nextToken();
+            if (method.charAt(0) == 65533)  method = method.substring(1);
             pre.put("method", st.nextToken());
 
             if (!st.hasMoreTokens()) {
