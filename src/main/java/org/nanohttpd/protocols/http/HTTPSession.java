@@ -147,7 +147,7 @@ public class HTTPSession implements IHTTPSession {
             // Sometime happen, the string has 65533 char
             String method = st.nextToken();
             if (method.charAt(0) == 65533)  method = method.substring(1);
-            pre.put("method", st.nextToken());
+            pre.put("method", method);
 
             if (!st.hasMoreTokens()) {
                 throw new ResponseException(Status.BAD_REQUEST, "BAD REQUEST: Missing URI. Usage: GET /example/file.html");

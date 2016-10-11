@@ -33,5 +33,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="httpcore-4.2.4" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="commons-codec-1.6" level="project" />
+    <orderEntry type="library" exported="" name="nanohttpd.nanohttpd-2.1.0" level="project" />
   </component>
 </module>
